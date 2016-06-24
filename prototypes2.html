@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Am I Having A Heart Attack - Prototypes</title>
+<meta name="discription" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="Farmehr Farhour"  />
+<link href="css/layout.css" rel="stylesheet" title="default"  />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/interface.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9644022-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+if (window.File && window.FileReader && window.FileList && window.Blob) {
+  // Great success! All the File APIs are supported.
+} else {
+  alert('The File APIs are not fully supported in this browser.');
+}
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+   $(document).ready(
+   function()
+   {
+   $('#dock2').Fisheye(
+   {
+   maxWidth: 60,
+   items: 'a',
+   itemsText: 'span',
+   container: '.dock-container2',
+   itemWidth: 40,
+   proximity: 80,
+   alignment : 'left',
+   valign: 'bottom',
+   halign : 'center',
+   }
+   )
+   }
+   );
+</script>
+	<div id="header">
+    	<h1><a href="index.html" title="Back to the Home Page">Am I Having A Heart Attack</a></h1>
+    </div>
+         
+     <div id="contentarea">
+     	<div id="content">
+        	<h2>Prototypes</h2>
+            <p>I was playing around with javascript and I wrote this little script using various functions and loops in JS <br /> </p><br />
+            <p>
+  <style>
+  .thumb {
+    height: 75px;
+    border: 1px solid #000;
+    margin: 10px 5px 0 0;
+  }
+</style>
+
+
+<input type="file" id="files" name="files[]" multiple />
+<output id="list"></output>
+
+<script>
+  function handleFileSelect(evt) {
+    var files = evt.target.files; // FileList object
+
+    // Loop through the FileList and render image files as thumbnails.
+    for (var i = 0, f; f = files[i]; i++) {
+
+      // Only process image files.
+      if (!f.type.match('image.*')) {
+        continue;
+      }
+
+      var reader = new FileReader();
+
+      // Closure to capture the file information.
+      reader.onload = (function(theFile) {
+        return function(e) {
+          // Render thumbnail.
+          var span = document.createElement('span');
+          span.innerHTML = ['<img class="thumb" src="', e.target.result,
+                            '" title="', escape(theFile.name), '"/>'].join('');
+          document.getElementById('list').insertBefore(span, null);
+        };
+      })(f);
+
+      // Read in the image file as a data URL.
+      reader.readAsDataURL(f);
+    }
+  }
+
+  document.getElementById('files').addEventListener('change', handleFileSelect, false);
+</script>
+
+			</p>
+			<div class="clear">&nbsp;</div>
+		</div>
+      </div>
+      <div id="footer">
+      	<div id="footerdetails">
+         
+            <p>Designed by Farmehr Farhour  FF ©Copyright 2011 </p>
+        </div>
+      </div>
+      <!--bottom dock -->
+		<div class="dock" id="dock2">
+  			<div class="dock-container2">
+	  			<a class="dock-item2" href="index.html"><span>Home</span><img src="images/layout/dock/HOME.png" alt="home" /></a> 
+				<a class="dock-item2" href="contact.html"><span>Contact</span><img src="images/layout/dock/MAIL.png" alt="contact" /></a> 
+	  			<a class="dock-item2" href="about.html"><span>About Me</span><img src="images/layout/dock/INFO.png" alt="about us" /></a> 
+	  			<a class="dock-item2" href="games.html"><span>Games</span><img src="images/layout/dock/GAMECONTROLLER.png" alt="games" /></a> 
+	  			<a class="dock-item2" href="prototypes.html"><span>Prototypes</span><img src="images/layout/dock/FILE - BATCH.png" alt="prototypes" /></a> 
+ 		 </div>
+
+	</div>
+</body>
+</html>

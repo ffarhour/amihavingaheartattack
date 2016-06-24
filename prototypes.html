@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Am I Having A Heart Attack - Prototypes</title>
+<meta name="discription" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="Farmehr Farhour"  />
+<link href="css/layout.css" rel="stylesheet" title="default"  />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/interface.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9644022-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+   $(document).ready(
+   function()
+   {
+   $('#dock2').Fisheye(
+   {
+   maxWidth: 60,
+   items: 'a',
+   itemsText: 'span',
+   container: '.dock-container2',
+   itemWidth: 40,
+   proximity: 80,
+   alignment : 'left',
+   valign: 'bottom',
+   halign : 'center',
+   }
+   )
+   }
+   );
+</script>
+	<div id="header">
+    	<h1><a href="index.html" title="Back to the Home Page">Am I Having A Heart Attack</a></h1>
+    </div>
+         
+     <div id="contentarea">
+     	<div id="content">
+        	<h2>Prototypes</h2>
+            <a href="prototypes2.html">click here</a>
+            <p>I was playing around with javascript and I wrote this little script using various functions and loops in JS <br /> </p><br />
+            <p>
+            <!-- Clickme starts here -->
+            
+            <script type="text/javascript">
+	<!--
+		function displayMessage(firstName) {
+    		alert("Hello " + firstName + ", hope you like JavaScript functions!")
+		};
+		function notification (notif) {
+			while (notif == 0)
+			{
+				alert('You have to tell me your name first');
+				notif ++;
+			};
+		};
+	//-->
+</script>
+
+<script type="text/javascript" >
+	<!-- hide me
+		var Name;
+		var button = 0;
+		var notif = 0;
+		var thanks;
+		notification (notif);
+	// end hide -->
+</script>
+
+<input name="clickmefirst" type="button" value="click me first" onclick="
+	switch (button) 
+    {
+    	case 1: 
+        	alert('Told you to click me first!');
+            button ++;
+        break;
+        case 2:
+        	alert('STOP CLICKING THE BUTTONS and just refresh the page!');
+        break;
+        case 0: 
+        	Name = prompt('What is your name?','');
+            thanks(thanks)
+     };
+     notif ++;
+     " 
+/>
+
+<input name="clickme" type="button" onclick=
+	"
+    	if (Name==undefined) 
+        	{
+            	alert('Do not click me first!'); 
+                if (button < 2) { button = 1 }; notification(notif=0);
+          	}
+        else 
+        	{
+            	displayMessage(Name)
+            }
+     "
+value="click me" />
+<br />
+<br />
+<br />
+
+
+<div id="thanks"> &nbsp;</div> <br />
+<div id="order"> &nbsp;</div> 
+
+
+
+<script type="text/javascript">
+	<!--
+		function thanks(thanks) 
+		{
+			for (thanks = 0;thanks<1;thanks ++)
+			{	
+				document.getElementById("thanks").innerHTML+="Thanks for giving me your name";
+				document.getElementById("order").innerHTML+="Now click on the 'click me' button";
+			};
+		}
+	-->
+</script>
+<!-- clickme ends here -->
+			</p>
+			<div class="clear">&nbsp;</div>
+		</div>
+      </div>
+      <div id="footer">
+      	<div id="footerdetails">
+         
+            <p>Designed by Farmehr Farhour  FF ©Copyright 2011 </p>
+        </div>
+      </div>
+      <!--bottom dock -->
+		<div class="dock" id="dock2">
+  			<div class="dock-container2">
+	  			<a class="dock-item2" href="index.html"><span>Home</span><img src="images/layout/dock/HOME.png" alt="home" /></a> 
+				<a class="dock-item2" href="contact.html"><span>Contact</span><img src="images/layout/dock/MAIL.png" alt="contact" /></a> 
+	  			<a class="dock-item2" href="about.html"><span>About Me</span><img src="images/layout/dock/INFO.png" alt="about us" /></a> 
+	  			<a class="dock-item2" href="games.html"><span>Games</span><img src="images/layout/dock/GAMECONTROLLER.png" alt="games" /></a> 
+	  			<a class="dock-item2" href="prototypes.html"><span>Prototypes</span><img src="images/layout/dock/FILE - BATCH.png" alt="prototypes" /></a> 
+ 		 </div>
+
+	</div>
+</body>
+</html>

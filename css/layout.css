@@ -1,0 +1,247 @@
+@charset "utf-8";
+/* CSS Document */
+/*<style type="text/css">*/ 
+
+body
+{
+	margin:0;
+	padding:0;
+	background-color:#000;
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:12px;
+}
+
+div#header
+{
+	margin:0;
+	padding:0;
+	background-color:#000;
+	background-repeat:no-repeat;
+	height:100px;
+	background-position:left;
+}
+
+div#header h1
+{
+	margin:0;
+	padding:0;
+	background-color:#000;
+	background-repeat:no-repeat;
+	background-position:80%0;
+	height:100px;
+	overflow:hidden;
+	
+	
+}
+
+div#header h1 a
+{
+	display:block;
+	margin:0;
+	padding-top:200px;
+	background-image:url(../images/layout/toptile.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-position:50%0;
+	height:100px;
+	overflow:hidden;
+	text-align:center;
+}
+
+div#navigation
+{
+	position:absolute;
+	top:172px;
+	left:500px;
+	width:126px;
+	background-color:#d7d3ca;
+	background-repeat:no-repeat;
+	background-position:50% 100%;
+	
+}
+
+div#navigation ul
+{
+	list-style:none;
+	margin:0px;
+	padding:10px;
+	font-size:11px;
+	font-weight:bold;
+	background-repeat:no-repeat;
+}
+
+div#navigation ul li
+{
+	color:#6b4f00;
+}
+div#navigation ul li a:link
+{
+	color:#000;
+	text-decoration:none;
+}
+div#navigation ul li a:visited
+{
+	color:#000;
+	text-decoration:none;
+}
+div#navigation ul li a:hover
+{
+	color:#6b4f00;
+	text-decoration?:none;
+}
+
+div#contentarea
+{
+	margin:0;
+	padding:0;
+	background-image:url(../images/layout/content.png);
+	background-repeat:no-repeat;
+	background-position:50%0;
+	text-align:center;
+	
+}
+
+div#content
+{
+	margin:-1px 0 0 0;
+	padding:0;
+	text-align:center;
+	height:601px;
+	width:1280px;
+	
+	position:relative;
+	right:20px;
+	width:100%;
+}
+h2
+{
+	margin:0;
+	padding:50px 0 1em 15px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:24px;
+	color:#CCC;
+	text-shadow:#FFF;
+	font-style:oblique;
+}
+
+p
+{
+	margin:0;
+	padding:0px 0 1em 20px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color:#CCC;
+	font-size:14px;
+	font-style:italic;
+}
+
+a
+{
+	color:#0FF;
+}
+
+div#footer
+{
+	margin:0;
+	padding:0;
+	background-color:#000;
+	background-repeat:no-repeat;
+}
+
+div#footer div#footerdetails
+{
+	margin:0 0 0 59px;
+	padding:0;
+	background-color:#000;
+	background-repeat:no-repeat;
+	background-position:100% 0;
+	overflow:hidden;
+	height:84px;
+}
+
+div#footer div#footerdetails p
+{
+	margin:0 59px 0 0;
+	padding:0px 0 0 0 ;
+	background-color:#000;
+	background-image:url(../images/layout/basetile.png);
+	background-repeat:no-repeat;
+	background-position:50%0;
+	height:100px;
+	font-size:11px;
+	text-align:center;
+	elevation:higher;
+	color:#000;
+}
+
+h3
+{
+	margin:0;
+	padding:0 0 0.5em 0;
+	color:#1463b4;
+	font-size:15px;
+}
+
+img.right
+{
+	float:right
+}
+
+div.clear
+{
+	margin:0;
+	padding:0;
+	clear:both;
+	height:1px;
+}
+
+ol
+{
+	margin-bottom:0px;
+}
+
+dl
+{
+	margin-bottom:0px;
+}
+
+/* from style.css for dock2 */
+
+img {
+	border: none;
+}
+
+/* dock2 - bottom */
+#dock2 {
+	width: 100%;
+	bottom: 0;
+	position:relative;
+	right:20px;
+	
+}
+.dock-container2 {
+	position: absolute;
+	height: 50px;
+	background: url(images/dock-bg.gif);
+	padding-left: 20px;
+}
+a.dock-item2 {
+	display: block; 
+	font: bold 12px Arial, Helvetica, sans-serif;
+	width: 40px; 
+	color: #FFF; 
+	bottom: 0px; 
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+}
+.dock-item2 span {
+	display: none;
+	padding-left: 20px;
+}
+.dock-item2 img {
+	border: none; 
+	margin: 5px 10px 0px ; 
+	width: 100%; 
+}
+/*</style>*/ 
+

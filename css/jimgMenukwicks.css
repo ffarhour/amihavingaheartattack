@@ -1,0 +1,64 @@
+<!-- width:475px; height:200px; -->
+.jimgMenu {
+	position:relative;
+	margin: 0px 0px 0px 50px;
+	padding: 0px;
+	width:950px;
+	height:400px;
+	overflow: hidden;
+}
+
+.jimgMenu ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	height: 400px;
+	position: relative;
+	}
+	
+.jimgMenu ul li {
+	width: 190px;
+	float: left;
+	display: block;
+	overflow: hidden;
+}
+
+.jimgMenu ul li a {
+	text-indent: -1000px;
+	background:#fff repeat scroll 0%;
+	border-right: 2px solid #fff;
+	cursor:pointer;
+	display:block;
+	overflow: hidden;
+	height: 400px;
+}
+
+.jimgMenu ul li#home a {
+	background: url(../images/layout/jimgmenu/Home.jpg) repeat scroll 0%;
+  
+}
+
+.jimgMenu ul li#contact a {
+	background: url(../images/layout/jimgmenu/Contact.jpg) repeat scroll 0%;
+
+}
+
+.jimgMenu ul li#about a {
+	background: url(../images/layout/jimgmenu/About.jpg) repeat scroll 0%;
+  
+}
+
+.jimgMenu ul li#games a {
+	background: url(../images/layout/jimgmenu/Games.jpg) repeat scroll 0%;
+
+}
+
+.jimgMenu ul li#prototypes a {
+	background: url(../images/layout/jimgmenu/Prototypes.jpg) repeat scroll 0%;
+	border-right-style: none;
+}
+
+.clear {
+	clear: both;
+}
